@@ -1,36 +1,86 @@
 body {
-    background: linear-gradient(135deg, #050505, #111111);
-    color: #00D9FF;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    padding-top: 120px;
     margin: 0;
+    font-family: Arial, sans-serif;
+    background: #080808;
+    color: white;
 }
 
-h1 {
-    font-size: 70px;
+/* NAVBAR */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: black;
+    border-bottom: 1px solid #00D9FF;
+}
+
+.logo {
+    color: #00D9FF;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00D9FF;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+li {
+    cursor: pointer;
+}
+
+/* HERO */
+
+.hero {
+    text-align: center;
+    padding: 140px 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    color: #00D9FF;
     text-shadow: 0 0 20px #00D9FF;
-    letter-spacing: 5px;
 }
 
-p {
+.hero p {
     font-size: 22px;
-    color: #bbbbbb;
-    margin-bottom: 40px;
+    max-width: 700px;
+    margin: auto;
+    color: #aaaaaa;
 }
 
 button {
+    margin-top: 30px;
     background: #8A2BE2;
-    color: white;
     border: none;
-    padding: 18px 40px;
+    padding: 18px 35px;
+    color: white;
     font-size: 18px;
     cursor: pointer;
     border-radius: 8px;
-    box-shadow: 0 0 15px #8A2BE2;
-    transition: 0.3s;
+    box-shadow: 0 0 20px #8A2BE2;
 }
 
-button:hover {
-    transform: scale(1.05);
+/* PRODUCTS */
+
+.products {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.products h2 {
+    color: #FF008C;
+}
+
+.product-card {
+    background: #121212;
+    width: 250px;
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #00D9FF;
+    border-radius: 12px;
 }
